@@ -88,7 +88,7 @@ int main(int argc, char **argv) {
  * SMBI 7f   2  SMBI n8
  * SMI  ff   2  SMI n8
  * STR  5n   2   STR reg
- * STXD 73   2
- * XOR  f3   2
- * XRI  fb   2
+ * STXD 73   2  STXD
+ * XOR  f3   2  XOR
+ * XRI  fb   2  XRI n8
  */
