@@ -18,6 +18,24 @@ typedef enum SYMTYPE
 
 }SymbolType_t;
 
+class Symbol
+{
+public:
+
+private:
+
+};
+
+
+class SymbolTable
+{
+public:
+	SymbolTabel();
+	SymbolType_t getType();
+private:
+
+};
+
 
 
 
