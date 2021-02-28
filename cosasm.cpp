@@ -5,10 +5,10 @@ int main(int argc, char **argv) {
 
 
 /*  instruction set
- * ADC  74   2
+ * ADC  74   2  ADC
  * ADCI 7c   2   ADCI  n8
  * ADI  f4   2   ADI   n8
- * AND  f2   2
+ * AND  f2   2   AND
  * ANI  fa   2   ANI   n8
  * B1   34   2   B1  sht
  * B2   35   2   B2  sht
@@ -47,8 +47,8 @@ int main(int argc, char **argv) {
  * LDA  4n   2   LDA reg
  * LDI  f8   2   LDI  n8
  * LDN  0n   2   LDN  reg
- * LDX  f0   2
- * LDXA 72   2
+ * LDX  f0   2   LDX
+ * LDXA 72   2   LDXA
  * LSDF cf   3   LSDF
  * LSIE cc   3   LSIE
  * LSKP c8   3   LKSP *
@@ -70,9 +70,9 @@ int main(int argc, char **argv) {
  * RET  70   2  RET
  * RSHL 76   2  RSHL  *
  * RSHR 7e   2  RSHR  *
- * SAV  78   2
- * SD   f5   2
- * SDB  75   2
+ * SAV  78   2  SAV
+ * SD   f5   2  SD
+ * SDB  75   2  SDB
  * SDBI 7d   2  SDBI n8
  * SDI  fd   2  SDI  n8
  * SEP  dn   2  SEP  reg
@@ -83,8 +83,8 @@ int main(int argc, char **argv) {
  * SHR  f6   2  SHR
  * SHRC 76   2  SHRC   *
  * SKP  38   2   SKP  *
- * SM   f7   2
- * SMB  77   2
+ * SM   f7   2  SM
+ * SMB  77   2  SMB
  * SMBI 7f   2  SMBI n8
  * SMI  ff   2  SMI n8
  * STR  5n   2   STR reg
