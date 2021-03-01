@@ -46,6 +46,9 @@ class SymbolTable
 {
 public:
 	SymbolTable();
+	bool insert(Symbol s);
+	bool exists(char * nm);
+	bool isDefined(char * nm);
 	SymbolType_t getType(char *name);
 private:
 
