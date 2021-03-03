@@ -1,5 +1,9 @@
+#include "Assemble.h"
 
-int main(int argc, char **argv) {
+
+int main(int argc, char **argv)
+{
+	assembleFile("Filename.18");
 	return 0;
 }
 

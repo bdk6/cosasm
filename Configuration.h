@@ -14,6 +14,10 @@
 
 typedef uint16_t Value_t;
 
+// Errors
+#define ERR_NULL_POINTER      0
+#define ERR_NO_FILE           1
+#define ERR_FILE_ERROR        2
 
 
 
