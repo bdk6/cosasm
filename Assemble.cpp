@@ -5,6 +5,7 @@
  *      Author: wrcooke
  */
 #include "Assemble.h"
+#include "Scanner.h"
 
 static int lineNumber = 0;
 static int charNumber = 0;
@@ -27,10 +28,11 @@ static int getToken()
 static int assembleLine()
 {
 	int rtn = 0;
+	scan();
 
 	return rtn;
 }
-int assembleFile(char * filename)
+int assembleFile(const char * filename)
 {
 	assembleLine();
 	int rtn = 0;

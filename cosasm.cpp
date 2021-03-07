@@ -96,3 +96,4 @@ int main(int argc, char **argv)
  * XOR  f3   2  XOR
  * XRI  fb   2  XRI n8
  */
+

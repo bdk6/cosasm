@@ -9,7 +9,7 @@
 #define ASSEMBLE_H_
 
 
-int assembleFile(char * filename);
+int assembleFile(const char * filename);
 
 
 
