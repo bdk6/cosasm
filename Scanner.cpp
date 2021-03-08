@@ -7,9 +7,12 @@
 
 #include <stdint.h>
 #include <stdio.h>
+#include <ctype.h>
+
 
 #include "Scanner.h"
 
+#define EOL  '\n'
 static bool rescan = false;
 
 static token_t lastToken;
@@ -36,6 +39,37 @@ int closeFile()
 	return rtn;
 }
 
+static int nextChar()
+{
+	int rtn = -1;
+
+	return rtn;
+}
+
+static int ungetChar(int ch)
+{
+	int rtn = 0;
+
+	return rtn;
+}
+
+static int skipWhite()
+{
+	int rtn = 0;
+
+	return rtn;
+}
+
+static bool isLetter(int ch)
+{
+	bool rtn = false;
+	if( (ch >= 'a' && (ch <= 'z') || (ch >= 'A' && ch <= 'Z') || ch == '_'))
+	{
+		rtn = true;
+	}
+	return rtn;
+}
+
 
 token_t scan()
 {
@@ -47,7 +81,22 @@ token_t scan()
 	}
 	else
 	{
-		// skip whitespace
+		skipWhite();
+		int ch = nextChar();
+		rtn.line = thisLine;
+		rtn.pos = thisPos;
+		if(EOL == ch)
+		{
+			// end of line
+		}
+		else if(isalpha(ch) || ch == '_')
+		{
+			rtn.typ == TOK_IDENT;
+		}
+		else if(isdigit(ch))
+		{
+			rtn.typ == TOK_INT;
+		}
 
 	}
 

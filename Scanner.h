@@ -20,6 +20,8 @@ typedef enum TOKEN_TYPE
 	TOK_UNDEF       = 0,
 	TOK_IDENT,
 	TOK_INT,
+	TOK_EOL,
+
 
 } tokenType_t;
 
